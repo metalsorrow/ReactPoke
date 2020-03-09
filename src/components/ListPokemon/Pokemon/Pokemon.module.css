@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Pokemon {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+h2{
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+span{
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+img{
+    background-image: linear-gradient(to bottom right, rgba(0,0,0,0.5) , rgba(0,0,0,0.04));
+    border-radius: 50%;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.Description{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+    background-color: rgb(231, 231, 231);
+    color: black;
+}
+
+h2{
+    margin-bottom: 0.5rem;
+}
+
+.Abilities{
+    width: 50%;
+    margin: 0 auto;
+}
+.Abilities li{
+    text-align: start;
+    list-style:circle;
+}
