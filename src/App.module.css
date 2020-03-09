@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+  overflow-y: hidden;
+}
+
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
+.AppHeader {
+  background-color: #282c34;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  padding: 2rem 0;
+}
+.AppHeader a{
+  color: orange;
+}
+.search{
+  color: green;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas: "title title"
+                       "input button";
+}
+.search input{
+  grid-area: input;
+}
+.search label{
+  grid-area: title;
+}
+.search button{
+  grid-area: button;
+}
+.pokemonContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+@media (min-width: 768px) {
+  .AppHeader{
+    flex-direction: row;
+  }
+}
