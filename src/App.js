@@ -4,7 +4,11 @@ import Pokemon from './components/ListPokemon/Pokemon/Pokemon'
 import {ListPokemon} from './components/ListPokemon/ListPokemon'
 
 //TODO: Random Color pokemon
+<<<<<<< HEAD
 var randomColor = "#"+((1<<24)*Math.random()|0).toString(16); 
+=======
+var randomColor 
+>>>>>>> d98ad471faadb71fe96f355a958796ad3b39c163
 
 function App() {
   const [pokemon, setPokemon] = useState(null);
@@ -12,16 +16,27 @@ function App() {
   
   
   const searchPokemon = () => {
+<<<<<<< HEAD
     
     let search = document.getElementById("textSearch").value;
+=======
+    randomColor = "#"+((1<<24)*Math.random()|0).toString(16); 
+    const search = document.getElementById("textSearch").value;
+>>>>>>> d98ad471faadb71fe96f355a958796ad3b39c163
     let toFetch = "https://pokeapi.co/api/v2/pokemon/";
     if(search === ""){
       toFetch = "https://pokeapi.co/api/v2/pokemon?offset=0&limit=1000";
     }else {
+<<<<<<< HEAD
       if(isNaN(search) && search >0 )  search -= 1;
     }
 
     toFetch += search
+=======
+      toFetch += search;
+      
+    }
+>>>>>>> d98ad471faadb71fe96f355a958796ad3b39c163
     
     fetch(toFetch)
     .then(res => res.json())

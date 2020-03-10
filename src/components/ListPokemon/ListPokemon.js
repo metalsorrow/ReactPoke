@@ -6,7 +6,11 @@ export const ListPokemon = (props) => {
         return (
           <tr>
             <td>
+<<<<<<< HEAD
               <p>{index + 1}</p>
+=======
+              <p>{index}</p>
+>>>>>>> d98ad471faadb71fe96f355a958796ad3b39c163
             </td>
   
             <td>
