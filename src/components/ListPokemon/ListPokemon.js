@@ -1,16 +1,12 @@
 import React from 'react'
-import classes  from './ListPokemon.module.css'
+import classes  from './ListPokemon.module.scss'
 
 export const ListPokemon = (props) => {
     let renderListPokemon = props.pokemons.data.results.map( (poke, index) => {
         return (
           <tr>
             <td>
-<<<<<<< HEAD
-              <p>{index + 1}</p>
-=======
               <p>{index}</p>
->>>>>>> d98ad471faadb71fe96f355a958796ad3b39c163
             </td>
   
             <td>

@@ -1,12 +1,12 @@
 import React from 'react'
-import classes from './PokemonType.module.css'
+import  './PokemonType.styles.scss'
 
-const PokemonType = (props) => {
-    return (
-        <div className={classes.PokemonType} onClick={props.clickedFunction}>
-            {props.type}
-        </div>
-    )
-}
+const PokemonType = ({clickedFunction, type}) => (
+    <div className= 'PokemonType' onClick={clickedFunction}>
+        <p>
+            {type}
+        </p>
+    </div>
+)
 
 export default PokemonType

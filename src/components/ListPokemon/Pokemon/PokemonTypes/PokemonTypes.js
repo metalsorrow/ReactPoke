@@ -1,15 +1,15 @@
 import React from 'react'
 import PokemonType from './PokemonType.js/PokemonType'
-import classes from './PokemonTypes.module.css'
+import'./PokemonTypes.styles.css'
 
-const PokemonTypes = (props) => {
+const PokemonTypes = ({arrayTypes}) => {
 
-    let Types = props.arrayTypes.map((typeMap,index) => 
+    let Types = arrayTypes.map((typeMap,index) => 
         <PokemonType key={index} type={typeMap.type.name}/>
     );
 
     return (
-        <div className={ classes.PokemonTypes }>
+        <div className= 'container-types'>
             {Types}
         </div>
     )

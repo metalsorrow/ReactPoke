@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from './Pokemon.module.css'
+import classes from './Pokemon.module.scss'
 import PokemonTypes from './PokemonTypes/PokemonTypes'
 
 
