@@ -1,6 +1,6 @@
 import React from 'react'
 import PokemonType from './PokemonType.js/PokemonType'
-import'./PokemonTypes.styles.css'
+import'./PokemonTypes.styles.scss'
 
 const PokemonTypes = ({arrayTypes}) => {
 
