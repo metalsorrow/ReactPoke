@@ -1,4 +1,9 @@
 .pokemons-grid{
+    margin: 0 auto;
+
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: center;
+    max-width: 80rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }

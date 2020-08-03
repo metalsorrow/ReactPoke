@@ -4,8 +4,8 @@ import './pokemon-container.styles.scss';
 import Pokemon from '../pokemon/pokemon.component'
 
 const PokemonContainer = ({pokemons}) => {
-    let pokemonsRendered = pokemons.map( (pokemon, id) => (
-        <Pokemon key = {id} types = {pokemon.types} name = {pokemon.name} sprites = {pokemon.sprites}/>
+    let pokemonsRendered = pokemons.map( (pokemon) => (
+        <Pokemon key ={pokemon.id} {...pokemon}/>
     ))    
     
     return(

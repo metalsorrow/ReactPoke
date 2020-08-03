@@ -7,4 +7,26 @@ $second: #757cbb;
 .container {
     width: 80%;
     max-width: 1000px;
+    margin: 0 auto;
+
+    .intro,
+    .about{
+        background-color: #fbd13d;
+        margin: 2rem;
+        padding: 2rem;
+        border-radius: 0.2rem;
+        h2{
+            margin-bottom: 1rem;
+        }
+        h1{
+            text-align: center;
+        }
+    }
+
+
+    .carousel{
+        margin: 0 auto ;
+        width: 40vh;
+
+    }
 }

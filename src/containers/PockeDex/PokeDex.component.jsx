@@ -1,6 +1,9 @@
 import React from 'react'
 
+import './PokeDex.styles.scss'
+
 import PokemonContainer from '../../components/pokemons-container/pokemons-container.component';
+
 class PokeDex extends React.Component {
     constructor(){
         super();

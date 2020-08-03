@@ -1,10 +1,10 @@
 .PokemonType{
     color: black;
-    font-weight: 700;
+    font-weight: 300;
+    text-transform: capitalize;
     font-size: 12px;
-    border-radius: 5px;
+    border-radius: 100px;
     background-color: rgb(255, 179, 0);
-    border: solid 1px black;
     padding: 3px 8px;
     margin: 2px 4px;
 }

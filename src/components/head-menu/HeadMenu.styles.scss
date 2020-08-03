@@ -40,17 +40,23 @@ $second: #757cbb;
 
             .link {
                 color: $ligthColor;
-                display: block;
+                display: flex;
                 padding: 0.6rem;
-                text-align: center;
-                
+                align-items: center;
+                justify-content: space-evenly;
+                border-radius: 1rem;
                 transition: all ease-in-out 0.2s;
 
                 &:hover {
+                    background-color: $first;
                     color: $white;
                 }
             }
 
+        }
+
+        .icon-container{
+            width: 4rem;
         }
     }
 

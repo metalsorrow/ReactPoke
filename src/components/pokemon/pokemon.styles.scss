@@ -1,0 +1,36 @@
+$dark: #070808;
+$white: #ffffff;
+$ligthColor: hsl(217, 53%, 88%);
+$first: #fbd13d;
+$second: #757cbb;
+
+.pokemon{
+    background-color: $ligthColor ;
+
+    border-radius: 1rem;
+    
+    &-img{
+        background-color: rgb(241, 241, 241);
+        border-radius: 1rem 1rem 0 0;
+        cursor: pointer;
+    }
+
+    &-id{
+        font-size: 0.6rem;
+        font-weight: 300;
+    }
+    &-description{
+        padding: 0.2rem 1rem;
+        h3{
+            text-transform: capitalize;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    }
+
+    .types-container{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+}

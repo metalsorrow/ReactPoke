@@ -3,7 +3,7 @@ import React from 'react'
 import './pokemon.styles.scss';
 import Types from '../PokemonTypes/PokemonTypes';
 
-const pokemon = ({types,sprites, name }) => (
+const pokemon = ({types, sprites, name, id }) => (
 
     <div className="pokemon">
         <div className="pokemon-img">
@@ -11,10 +11,10 @@ const pokemon = ({types,sprites, name }) => (
         </div>
 
         <div className="pokemon-description">
-            <p>nombre: {name}</p>
+            <span className="pokemon-id">{`N° - ${id}`}</span>
+            <h3>{name}</h3>
+            <Types arrayTypes = {types} />
         </div>
-
-        <Types arrayTypes = {types} />
 
     </div>
 )
