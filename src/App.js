@@ -7,6 +7,7 @@ import HeadMenu from "./components/head-menu/HeadMenu.component";
 import Footer from "./components/footer/footer.component";
 import PokeDex from "./containers/PockeDex/PokeDex.component"
 import Nintendo from "./containers/nintendo/nintendo.component"
+import PokemonDetails from './components/pokemonDetails/PokemonDetails.component';
 
 class App extends React.Component {
   constructor(){
@@ -21,8 +22,9 @@ class App extends React.Component {
             <HeadMenu/>
             <Switch >
               <Route path="/" exact component={Home}/>
-              <Route path="/pokedex" component={PokeDex}/>
-              <Route path="/nintendo" component={Nintendo}/>
+              <Route path="/pokedex" exact component={PokeDex}/>
+              <Route path="/pokedex/:id" component={PokemonDetails}/>
+              <Route path="/nintendo" exact component={Nintendo}/>
             </Switch>
 
           </div>
